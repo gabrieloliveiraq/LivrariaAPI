@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://gabriel:Asdf7955@node-express.izfqx0d.mongodb.net/LivrariaAPI");
+let password = 'Asdf7955'
+
+mongoose.connect(`mongodb+srv://gabriel:${password}@node-express.izfqx0d.mongodb.net/LivrariaAPI`);
 
 let db = mongoose.connection;
 
